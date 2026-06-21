@@ -19,7 +19,7 @@ function Intro() {
                         </div>
                         <div className={`${style.text}`}>
                             <p className={`${style.title}`}>Where to</p>
-                            <input type="text" placeholder="Search any location" required/>
+                            <input type="text" placeholder="Search any location" aria-label="Search any location" required/>
                         </div>
                     </div>
                     <div className={`${style.slash}`}></div>
@@ -30,11 +30,11 @@ function Intro() {
                         
                         <div className={`${style.text}`}>
                             <p className={`${style.title}`}>Date</p>
-                            <input type="date" placeholder="Select a date" required/>
+                            <input type="date" placeholder="Select a date" aria-label="Choose date" required/>
                         </div>
                         
                     </div>
-                    <button className={`${style.search__btn}`}>
+                    <button className={`${style.search__btn}`} aria-label="Search button">
                         <div className="icon">
                             <Search size={24}/>
                         </div>
@@ -62,15 +62,15 @@ function Intro() {
             <div className={`${style.media}`}>
                 <div className={`${style.media__item} ${style.media__1}`}>
                     <Image 
-                    src={travelPhoto1}/>
+                    src={travelPhoto1} alt="Woman holding her hat looking at the colosseum in Rome"/>
                 </div>
                 <div className={`${style.media__item} ${style.media__2}`}>
                 <Image 
-                    src={travelPhoto2}/>
+                    src={travelPhoto2} alt="Man rowing his boat through a peaceful river"/>
                 </div>
                 <div className={`${style.media__item} ${style.media__3}`}>
                 <Image 
-                    src={travelPhoto3}/>
+                    src={travelPhoto3} alt="Woman sitting close to a cliff enjoying the view"/>
                 </div>
             </div>
         </div>

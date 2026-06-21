@@ -8,14 +8,14 @@ function Subscribe() {
       <div className={`${style.media}`}>
         <Image 
         src={emailMktImg}
-        />
+        alt="A marketing illustration showing a laptop a rocket and e-mail icons"/>
       </div>
         <div className="content">
             <h3>Subscribe to our newsletter to get exclusive updates from Us</h3>
             <p>Receive latest news, update, and many other things every week</p>
             <form>
-                <input type="text" required/>
-                <button className="btn btn-primary">Subscribe</button>
+                <input type="text" aria-label="Email input" required/>
+                <button className="btn btn-primary" aria-label="Subscribe button">Subscribe</button>
             </form>
         </div>
       </div>
