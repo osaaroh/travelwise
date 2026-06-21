@@ -6,6 +6,10 @@ import telegram from "@/assets/socials/telegram.svg"
 import Logo from "./Logo"
 
 function Footer({nunito}) {
+    let getCurrentYear=()=>{
+    let currentDate = new Date()
+    return currentDate.getFullYear()
+  }
   return (
     <footer className={`${nunito.className}`}>
         <div className="section__inner">
@@ -77,7 +81,7 @@ function Footer({nunito}) {
         </div>
         <div className="logo-wrapper">
             <Logo />
-            <p>2023. All rights reserved</p>
+            <p>&copy; 2023 - {getCurrentYear()}. All rights reserved</p>
         </div>
         </div>
     </footer>
